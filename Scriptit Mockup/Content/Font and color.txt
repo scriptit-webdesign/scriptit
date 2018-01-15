@@ -1,0 +1,10 @@
+
+body {
+background-color: #ebebeb and #fff; }
+h1,
+h2,
+h3,
+p { color: #000, #fff font-family: 'Lato', sans-serif;}
+btn {color: #f78813;}
+color: #003366;
+
