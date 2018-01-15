@@ -1,2 +1,2 @@
 # scriptit
-Team is for Website Design and Marketing
+Team is for Website Design and SEO
