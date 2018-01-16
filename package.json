@@ -1,0 +1,13 @@
+{
+  "name": "",
+  "version": "",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
