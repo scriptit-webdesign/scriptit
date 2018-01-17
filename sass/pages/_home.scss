@@ -1,6 +1,115 @@
 
-.section-about {
-    background-color: $color-grey;
-    padding: 25rem 0;
+// .section-about {
+//     background-color: $color-grey;
+//     padding: 25rem 0;
+//     margin-top: -20vh;
+// }
+
+.we-do {
+    display: grid;
+    grid-template-rows: 95vh;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: -20vh;
 }
+
+.story {
+    &__pictures {
+        background-color: $color-grey;
+        padding: 12rem 0;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+    }
+
+    &__img--1 {
+        width: 100%;
+        grid-row: 2 / 6;
+        grid-column: 2 / 6;
+    }
+
+    &__img--2 {
+        width: 115%;
+        height: 15rem;
+        grid-row:  12/ 6;
+        grid-column: 3 / 6;
+        z-index: 20;
+        box-shadow: 0 2rem 5rem rgba($color-black, .2);
+        opacity: .7;
+    }
+
+    &__content {
+        background-color: $color-grey;
+        padding: 6rem 8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        // Everything works just the same flex
+        /* display: grid;
+        align-content: center;
+        justify-items: start; */
+    }
+    
+    &__text {
+        font-size: 1.5rem;
+        color: $color-black;
+        margin-bottom: 4rem;
+    }
+
+}
+
+.we-do-marketing {
+    display: grid;
+    grid-template-rows: 95vh;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -9rem;
+}
+
+.digital {
+    &__marketing {
+        background-color: $color-grey;
+        padding: 6rem 8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: $color-black;
+        margin-bottom: 4rem;
+    }
+
+    &__picture--2 {
+        background-color: $color-grey;
+        padding: 12rem 0;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+    }
+
+    &__img--3 {
+        width: 100%;
+        grid-row: 6 / 2;
+        grid-column: 6 / 2;
+    }
+
+    &__img--4 {
+        width: 115%;
+        height: 15rem;
+        grid-row:  6/ 12;
+        grid-column: 1 / 5;
+        z-index: 20;
+        box-shadow: 0 2rem 5rem rgba($color-black, .2);
+        opacity: .7;
+    }
+}
+
+
+
+  
+ 
