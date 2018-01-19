@@ -50,7 +50,15 @@
         grid-row: 2 / 6;
         grid-column: 2 / 6;
         box-shadow: 0 2rem 5rem rgba($color-black, .1);
-        // margin-top: -15rem;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05);
+            box-shadow: 0 2rem 5rem rgba($color-black, .2);
+            z-index: 20;
+        }
 
         @include respond(tab-port) {
             grid-column: 1/5;
@@ -92,12 +100,20 @@
         grid-row: 2 / 6;
         grid-column: 2 / 6;
         box-shadow: 0 2rem 5rem rgba($color-black, .1);
-        // margin-top: -15rem;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+        
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05);
+            box-shadow: 0 2rem 5rem rgba($color-black, .2);
+            z-index: 20;
+        }
 
         @include respond(tab-port) {
             grid-column: 7/-5;
             grid-row: -1/1;
-            // margin-top: -50rem;
          }
     }
     &__content {
