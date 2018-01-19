@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -7,16 +24,28 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -33,24 +62,43 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     /*animation-delay: 3s;*/ }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem;
+        margin-top: 6rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: .5rem;
     animation: moveInRight 1s ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-2 {
   font-size: 5rem;
-  margin-top: -2rem;
-  color: #000; }
+  color: #000;
+  line-height: 1; }
 
 .heading-3 {
   font-size: 2.5rem;
   letter-spacing: .5rem;
   color: #000;
-  text-transform: uppercase;
-  margin-top: 6rem; }
+  text-transform: uppercase; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-hg {
+  margin-bottom: 8rem; }
 
 @keyframes moveInLeft {
   0% {
@@ -82,7 +130,7 @@ body {
 
 .we-do {
   display: grid;
-  grid-template-rows: 95vh;
+  grid-template-rows: 110vh;
   grid-template-columns: repeat(2, 1fr);
   margin-top: -20vh; }
 
@@ -92,32 +140,86 @@ body {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
-  align-items: center; }
+  align-items: center;
+  background-size: cover; }
+  @media only screen and (max-width: 56.25em) {
+    .story__pictures {
+      grid-column: 1 / -1;
+      padding: 6rem;
+      margin-top: -15rem;
+      background-image: linear-gradient(rgba(247, 136, 19, 0.5), rgba(247, 136, 19, 0.5)), url(../img/back.jpg);
+      z-index: 20; } }
+
+.story__picture {
+  background-color: #ebebeb;
+  padding: 12rem 0;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  background-size: cover; }
+  @media only screen and (max-width: 56.25em) {
+    .story__picture {
+      grid-column: 1 / -1;
+      padding: 6rem;
+      margin-top: -15rem;
+      background-image: linear-gradient(rgba(247, 136, 19, 0.5), rgba(247, 136, 19, 0.5)), url(../img/marketing.jpg);
+      z-index: 20; } }
 
 .story__img--1 {
   width: 100%;
   grid-row: 2 / 6;
-  grid-column: 2 / 6; }
+  grid-column: 2 / 6;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 56.25em) {
+    .story__img--1 {
+      grid-column: 1/5;
+      grid-row: 1/-1; } }
 
 .story__img--2 {
   width: 115%;
-  height: 15rem;
-  grid-row: 12/ 6;
-  grid-column: 3 / 6;
+  grid-row: 4 / 6;
+  grid-column: 4 / 7;
   z-index: 20;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
   opacity: .7; }
+  @media only screen and (max-width: 56.25em) {
+    .story__img--2 {
+      grid-row: 1 / -1;
+      width: 100%; } }
+
+.story__img--3 {
+  width: 115%;
+  grid-row: 4 / 6;
+  grid-column: 4 / -7;
+  z-index: 20;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  opacity: .7; }
+  @media only screen and (max-width: 56.25em) {
+    .story__img--3 {
+      grid-row: 1 / -1;
+      width: 100%; } }
+
+.story__img--4 {
+  width: 100%;
+  grid-row: 2 / 6;
+  grid-column: 2 / 6;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 56.25em) {
+    .story__img--4 {
+      grid-column: 7/-5;
+      grid-row: -1/1; } }
 
 .story__content {
   background-color: #ebebeb;
   padding: 6rem 8vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  /* display: grid;
-        align-content: center;
-        justify-items: start; */ }
+  display: grid;
+  align-content: center;
+  justify-items: start; }
+  @media only screen and (max-width: 56.25em) {
+    .story__content {
+      grid-column: 1 / -1;
+      grid-row: 1 / 6; } }
 
 .story__text {
   font-size: 1.5rem;
@@ -126,44 +228,13 @@ body {
 
 .we-do-marketing {
   display: grid;
-  grid-template-rows: 95vh;
+  grid-template-rows: 110vh;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: -9rem; }
-
-.digital__marketing {
-  background-color: #ebebeb;
-  padding: 6rem 8vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; }
-
-.digital__text {
-  font-size: 1.5rem;
-  color: #000;
-  margin-bottom: 4rem; }
-
-.digital__picture--2 {
-  background-color: #ebebeb;
-  padding: 12rem 0;
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(6, 1fr);
-  align-items: center; }
-
-.digital__img--3 {
-  width: 100%;
-  grid-row: 6 / 2;
-  grid-column: 6 / 2; }
-
-.digital__img--4 {
-  width: 115%;
-  height: 15rem;
-  grid-row: 6/ 12;
-  grid-column: 1 / 5;
-  z-index: 20;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-  opacity: .7; }
+  margin-top: -15rem;
+  background-color: #ebebeb; }
+  @media only screen and (max-width: 56.25em) {
+    .we-do-marketing {
+      margin-bottom: 15rem; } }
 
 .header {
   height: 95vh;
@@ -200,6 +271,10 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4.2rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -211,6 +286,10 @@ body {
   background-image: radial-gradient(#f78813, #472704);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 5rem; } }
 
 .navigation__nav {
   height: 100vh;

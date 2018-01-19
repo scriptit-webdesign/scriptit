@@ -4,7 +4,7 @@ body {
 	font-weight: 400;
 	line-height: 1.7;
 	color: $color-grey-dark;
-	padding: 3rem;
+	
 }
 
 .heading-primary {
@@ -12,6 +12,10 @@ body {
 	text-transform: uppercase;
 	backface-visibility: hidden;
 	margin-bottom: 6rem;
+
+	@include respond(phone) {
+		
+	}
 
 	
 	&--main {
@@ -24,6 +28,12 @@ body {
 		animation-duration: 1s;
 		animation-timing-function: ease-out;
 		/*animation-delay: 3s;*/
+		
+		@include respond(phone) {
+			letter-spacing: 1rem;
+			font-size: 5rem;
+			margin-top: 6rem;
+		}
 	}
 
 	&--sub {
@@ -32,13 +42,18 @@ body {
 		font-weight: 700;
 		letter-spacing: .5rem;
 		animation: moveInRight 1s ease-out; 
+
+		@include respond(phone) {
+			letter-spacing: .5rem;
+		}
 	}
 }
 
 .heading-2 {
 	font-size: 5rem;
-	margin-top: -2rem;
+	// margin-top: -2rem;
 	color: $color-black;
+	line-height: 1;
 }
 
 .heading-3 {
@@ -46,14 +61,14 @@ body {
 	letter-spacing: .5rem;
 	color: $color-black;
 	text-transform: uppercase;
-	margin-top: 6rem;
+	// margin-top: 6rem;
 }
 
 
 
-// .mb-sm { margin-bottom: 2rem; }
-// .mb-md { margin-bottom: 3rem; }
-// .mb-lg { margin-bottom: 4rem; }
-// .mb-hg { margin-bottom: 8rem; }
+.mb-sm { margin-bottom: 2rem; }
+.mb-md { margin-bottom: 3rem; }
+.mb-lg { margin-bottom: 4rem; }
+.mb-hg { margin-bottom: 8rem; }
 
 

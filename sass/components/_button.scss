@@ -69,9 +69,11 @@
 	outline: none;
 	z-index: 20;
 	
+	
 	&:hover {
 		background-color: $color-primary-1;
 		transform: translateY(-.3rem);
 		box-shadow: 0 1rem 2rem rgba($color-black,.2);
 	}
+	
 }

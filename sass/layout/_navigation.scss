@@ -16,6 +16,10 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+        @include respond(phone) {
+            top: 4rem;
+            right: 4.2rem;
+		}
     }
 
     &__background {
@@ -29,6 +33,10 @@
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
         //transform: scale(80);
+        @include respond(phone) {
+            top: 4.5rem;
+            right: 5rem;
+		}
     }
 
     &__nav {
@@ -52,10 +60,6 @@
         width: 100%;
     }
 
-    &__item {
-        
-    
-    }
 
     &__link {
         &:link,
@@ -98,7 +102,7 @@
     &__icon {
         position: relative;
         margin-top: 3.4rem;
-
+       
         &,
         &::before,
         &::after {
