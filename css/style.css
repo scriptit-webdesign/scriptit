@@ -20,6 +20,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 *::before {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
 html {
@@ -237,12 +238,16 @@ body {
       margin-bottom: 15rem; } }
 
 .header {
-  height: 95vh;
+  height: 85vh;
   background-color: #222224;
   background-size: cover;
   background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      height: 95vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -275,6 +280,9 @@ body {
     .navigation__button {
       top: 4rem;
       right: 4.2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -290,6 +298,9 @@ body {
     .navigation__background {
       top: 4.5rem;
       right: 5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -371,6 +382,51 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.user-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15rem; }
+  .user-nav > * {
+    padding: 0 1rem;
+    cursor: pointer;
+    height: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .user-nav > * {
+        padding: 0 .7rem; } }
+  .user-nav__icon-box {
+    position: relative; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    margin-top: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .user-nav__icon {
+        margin-top: 6rem; } }
+  .user-nav__facebook {
+    fill: #3d5998; }
+  .user-nav__google-plus {
+    fill: #dd4b39; }
+  .user-nav__instagram {
+    fill: #517fa4; }
+  .user-nav__bubbles {
+    fill: #fff; }
+  .user-nav__notification {
+    font-size: .9rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: #f78813;
+    color: #fff;
+    position: absolute;
+    top: 5rem;
+    right: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .user-nav__notification {
+        top: 5rem; } }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;

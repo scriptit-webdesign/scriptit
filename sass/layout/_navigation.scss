@@ -19,7 +19,12 @@
         @include respond(phone) {
             top: 4rem;
             right: 4.2rem;
+            
+        }
+        @include respond(tab-port) {
+            top: 4rem;
 		}
+       
     }
 
     &__background {
@@ -36,6 +41,9 @@
         @include respond(phone) {
             top: 4.5rem;
             right: 5rem;
+        }
+        @include respond(tab-port) {
+            top: 4.5rem;
 		}
     }
 
@@ -147,4 +155,72 @@
         top: 0;
         transform: rotate(-135deg);
     }
+}
+
+//////////////////////////////////
+// USER NAVIGATION
+.user-nav {
+    // background-color: orangered;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15rem;
+    
+    & > * {
+        padding: 0 1rem;
+        cursor: pointer;
+        height: 100%;
+        @include respond(phone) {
+            padding: 0 .7rem;
+        }
+    }
+   
+    &__icon-box {
+        // display: flex;
+        // align-items: center;
+        position: relative;
+    }
+
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        margin-top: 6rem;
+        @include respond(phone) {
+            margin-top: 6rem;
+        }
+    }
+    &__facebook {
+        fill: #3d5998;
+    }
+
+    &__google-plus {
+        fill: #dd4b39;
+    }
+
+    &__instagram {
+        fill: #517fa4;
+    }
+
+    &__bubbles {
+        fill: #fff;
+    }
+
+    &__notification {
+        font-size: .9rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: $color-white;
+        position: absolute;
+        top: 5rem;
+        right: .1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+        @include respond(phone) {
+            top: 5rem;
+		}
+    }
+
 }
