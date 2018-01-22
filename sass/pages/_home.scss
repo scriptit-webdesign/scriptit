@@ -1,0 +1,235 @@
+
+.we-do {
+    display: grid;
+    grid-template-rows: 110vh;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -20vh;
+}
+
+.story {
+    &__pictures {
+        background-color: $color-grey;
+        // background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back.jpg);
+        padding: 12rem 0;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        background-size: cover;
+
+        @include respond(tab-port) {
+           grid-column: 1 / -1;
+           padding: 6rem;
+           margin-top: -15rem;
+           background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back.jpg);
+           z-index: 20;
+        }
+    }
+
+    &__picture {
+        background-color: $color-grey;
+        // background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back.jpg);
+        padding: 12rem 0;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        background-size: cover;
+
+        @include respond(tab-port) {
+           grid-column: 1 / -1;
+           padding: 6rem;
+           margin-top: -15rem;
+           background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/marketing.jpg);
+           z-index: 20;
+        }
+    }
+
+    &__img--1 {
+        width: 100%;
+        grid-row: 2 / 6;
+        grid-column: 2 / 6;
+        box-shadow: 0 2rem 5rem rgba($color-black, .1);
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05);
+            box-shadow: 0 2rem 5rem rgba($color-black, .2);
+            z-index: 20;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 1/5;
+            grid-row: 1/-1;
+            // margin-top: -50rem;
+         }
+    }
+
+    &__img--2 {
+        width: 115%;
+        grid-row: 4 / 6;
+        grid-column: 4 / 7;
+        z-index: 20;
+        box-shadow: 0 2rem 5rem rgba($color-black, .2);
+        opacity: .7;
+    
+        @include respond(tab-port) {
+            grid-row: 1 / -1;
+            width: 100%;
+         }
+    }
+
+    &__img--3 {
+        width: 115%;
+        grid-row: 4 / 6;
+        grid-column: 4 / -7;
+        z-index: 20;
+        box-shadow: 0 2rem 5rem rgba($color-black, .2);
+        opacity: .7;
+    
+        @include respond(tab-port) {
+            grid-row: 1 / -1;
+            width: 100%;
+         }
+    }
+
+    &__img--4 {
+        width: 100%;
+        grid-row: 2 / 6;
+        grid-column: 2 / 6;
+        box-shadow: 0 2rem 5rem rgba($color-black, .1);
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+        
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05);
+            box-shadow: 0 2rem 5rem rgba($color-black, .2);
+            z-index: 20;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 7/-5;
+            grid-row: -1/1;
+         }
+    }
+    &__content {
+        // background-color: $color-grey;
+        // padding: 6rem 8vw;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: flex-start;
+
+        // Everything works just the same flex
+        background-color: $color-grey;
+        padding: 6rem 8vw;
+        display: grid;
+        align-content: center;
+        justify-items: start; 
+
+        @include respond(tab-port) {
+            grid-column: 1 / -1; 
+            grid-row: 1 / 6;
+         }
+    }
+    
+    &__text {
+        font-size: 1.5rem;
+        color: $color-black;
+        margin-bottom: 4rem;
+    }
+}
+
+ .we-do-marketing {
+    display: grid;
+   grid-template-rows: 110vh;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -15rem;
+   background-color: $color-grey;
+    // transform: skewY(-7deg);
+    @include respond(tab-port) {
+        margin-bottom: 15rem;
+     }
+}
+
+
+
+//  .marketing {
+//        &__content {
+//         background-color: $color-grey;
+//         padding: 6rem 8vw;
+//         display: grid;
+//         align-content: center;
+//         justify-items: start;
+        
+//         @media only screen and (max-width: $bp-medium) {
+//             grid-column: 1 / -1; 
+//             grid-row: 1 / 6;
+//             /* padding: 6rem 0; */
+            
+//          }
+//     }
+
+//    &__text {
+//         font-size: 1.5rem;
+//         color: $color-black;
+//         margin-bottom: 4rem;
+//    }
+
+//    &__pictures {
+//         background-color: $color-grey;
+//         // background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back.jpg);
+//         padding: 12rem 0;
+//         display: grid;
+//         grid-template-rows: repeat(6, 1fr);
+//         grid-template-columns: repeat(6, 1fr);
+//         align-items: center;
+//         background-size: cover;
+
+//        @media only screen and (max-width: $bp-medium) {
+//             grid-column: 1 / -1;
+//             padding: 6rem;
+//             margin-top: -15rem;
+//             background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back.jpg);
+//             z-index: 20;
+//     }
+// }
+
+//     &__img--3 {
+//         width: 100%;
+//         grid-row: 2 / 6;
+//         grid-column: 2 / 6;
+//         box-shadow: 0 2rem 5rem rgba($color-black, .1);
+//         // margin-top: -15rem;
+
+//         @media only screen and (max-width: $bp-medium) {
+//             grid-column: 1/5;
+//             grid-row: 1/-1;
+//             // margin-top: -50rem;
+//          }
+//     }
+
+//      &__img--4 {
+//         width: 115%;
+//         grid-row: 4 / 6;
+//         grid-column: 4 / 7;
+//         z-index: 20;
+//         box-shadow: 0 2rem 5rem rgba($color-black, .2);
+//         opacity: .7;
+    
+//         @media only screen and (max-width: $bp-medium) {
+//             grid-row: 1 / -1;
+//             width: 100%;
+//          }
+//     }
+// }
+
+
+
+
+  
+ 
