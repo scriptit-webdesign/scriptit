@@ -1,56 +1,40 @@
 .featured-works {
+    max-width: 140rem;
+    margin: 4rem auto 0 auto;
     display: flex;
+    justify-content: space-between;
+    @include respond(phone) {
+        flex-direction: column;
+      }
     
-    
-    &__furniture {
-        flex: 1;
-        background-color: black;
-        background-image: linear-gradient(rgba($color-primary, .3), rgba($color-primary, .3)), url(../img/furniture.jpg);
+    &__customer {
+        box-sizing: border-box;
+        flex-basis: 30%;
         padding: 15rem 0;
-        margin-right: 4rem;
-        text-align: center;
-        font-size: 3rem;
-        outline-offset: .5rem; 
+        margin-bottom: 3rem;
+       
+       
         &:hover {
-            outline: .5rem solid $color-primary; 
             transform: scale(1.05);
             box-shadow: 0 2rem 5rem rgba($color-black, .2);
             z-index: 20;
     }
     }
 
-    &__clothes {
-        flex: 1;
-        background-color: yellowgreen;
+    &__customer:nth-child(1) {
+        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/home.jpg);
+        
+        text-align: center;
+        
+    }
+
+    &__customer:nth-child(2) {
         background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/clothes.jpg);
         text-align: center;
-        padding: 15rem 0;
-        font-size: 3rem;
-        outline-offset: .5rem; 
-        &:hover {
-            outline: .5rem solid $color-primary; 
-            transform: scale(1.05);
-            box-shadow: 0 2rem 5rem rgba($color-black, .2);
-            z-index: 20;
     }
-}
 
-
-    &__cars {
-        flex: 1;
-        background-color: aqua;
+    &__customer:nth-child(3) {
         background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/cars.png);
-        margin-left: 4rem;
         text-align: center;
-        padding: 15rem 0;
-        font-size: 3rem;
-
-        outline-offset: .5rem; 
-        &:hover {
-            outline: .5rem solid $color-primary; 
-            transform: scale(1.05);
-            box-shadow: 0 2rem 5rem rgba($color-black, .2);
-            z-index: 20;
-    }
     }
 }
