@@ -21,10 +21,12 @@ html {
     
     @include respond(big-desktop) {
         font-size: 75%; //1rem = 12, 12/16
-    }
+    } 
+
 }
 
 body {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 3rem;
 
