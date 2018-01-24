@@ -8,8 +8,11 @@ margin-top: -20vh;
 @include respond(phone) {
    flex-direction: column;
    padding: 15rem 0 0 0;
-    
  }
+
+ @include respond(tab-port) {
+    padding: 25rem 0 10rem 0;
+  }
 
 &__picture-1 {
     flex: 1;
@@ -36,11 +39,11 @@ margin-top: -20vh;
    
 &__content-1 {
     flex: 1;
-    /* background-color: yellowgreen; */
     @include respond(phone) {
-        padding: 2rem;
-         
+        padding: 2rem 2rem 0 2rem;
+        
       }
+     
     
 } 
 &__text-1 {
@@ -49,7 +52,6 @@ margin-top: -20vh;
     margin-bottom: 4rem;
     margin-right: 2rem;
     }
-   
 }
 
 .story-2 {
@@ -60,6 +62,8 @@ margin-top: -20vh;
     
     @include respond(phone) {
        flex-direction: column;
+        margin-top: -5rem;
+        padding: 0;
        
      }
     
@@ -89,22 +93,22 @@ margin-top: -20vh;
     &__content-2 {
         flex: 1;
         margin: 0 4rem;
-        /* background-color: yellowgreen; */
         @include respond(phone) {
-            padding: 2rem;
-            margin: 0;
-            
-             
+            margin: 0 1.8rem;
+            /* margin-left: 2rem; */
+            padding-bottom: 2rem;
           }
-        
+          @include respond(tab-port) {
+            
+          }
     } 
+
     &__text-2 {
         font-size: 1.5rem;
         color: $color-black;
         margin-bottom: 4rem;
         
         }
-       
     }
     
 
