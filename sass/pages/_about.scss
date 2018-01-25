@@ -1,0 +1,41 @@
+.about-wrapper{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items:center;
+flex-wrap: wrap;
+background-color: $color-grey;
+
+}
+
+.about-header{
+	width: 100%;
+	text-align: center;
+	margin: 7rem;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: $color-black;
+}
+
+.picture{
+	width: 290px;
+	height: 230px;
+	z-index: 1;
+	background-image: url(../img/photo-1103595_960_720.png);
+	background-position: center center;
+    background-size: cover;
+	
+}
+
+.blue-div{
+	width: 242px;
+	height: 260px;
+	background:linear-gradient(
+		rgba(1, 51, 106, 0.7),
+		rgba(1, 51, 106, 0.7)) ;
+	padding: 1rem .5rem 0 .8rem;
+	margin: -8rem 0 5rem 2.4rem; 
+	color: white;
+	font-size: 1.5rem;
+	
+}

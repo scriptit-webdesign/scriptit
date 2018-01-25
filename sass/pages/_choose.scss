@@ -19,15 +19,14 @@
     }
 }
 
-.user-reviews {
+.partiners {
     flex: 1;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $color-grey;
 }
-.review {
+.company-partner {
     padding: 3rem;
     margin-bottom: 3.5rem;
     position: relative;
@@ -38,12 +37,12 @@
         margin-bottom: 3rem;
     }
 
-    &__user {
+    &__part {
         display: flex;
         align-items: center;
     }
 
-    &__photo {
+    &__co-logo {
         height: 12rem;
         width: 12rem;
         
