@@ -38,3 +38,37 @@
         text-align: center;
     }
 }
+
+.a{
+    display: flex;
+    flex-direction: column;
+
+   
+    &__c{
+        background-color: orangered;
+        padding: 3rem;
+    }
+
+   
+}
+
+.b {
+    padding: 10rem;
+    width: 100%;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: row;
+    &__d{
+        padding: 6rem;
+        background-color: black;
+        width: 50%;
+        margin-right: 30%;
+        
+    }
+    &__e{
+        padding: 6rem;
+        background-color: white;
+        width: 50%;
+    }
+    
+}

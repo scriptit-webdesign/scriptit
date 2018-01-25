@@ -1,0 +1,54 @@
+
+.choose {
+    display: flex;
+    display: flex;
+    padding-top: 2rem;
+    
+    @include respond(phone) {
+        flex-direction: column;
+      }
+}
+
+.choose-us {
+    padding: 3rem;
+    flex: 0 0 70%;
+    background-color: $color-grey;
+
+    &__img--3 {
+        width: 100%;
+    }
+}
+
+.user-reviews {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-grey;
+}
+.review {
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+
+    &__photo {
+        height: 12rem;
+        width: 12rem;
+        
+        margin-right: 1.5rem;
+    }
+
+}
+
