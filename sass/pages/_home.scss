@@ -9,11 +9,12 @@ margin-top: -20vh;
 @include respond(phone) {
    flex-direction: column;
    padding: 0;
-   margin-top: -30vh;
+   margin-top: -20vh;
  }
 
  @include respond(tab-port) {
     padding: 25rem 0 10rem 0;
+    
   }
 
 &__picture-1 {
