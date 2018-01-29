@@ -145,7 +145,7 @@ body {
     flex: 0 0 50%;
     margin-bottom: .7rem;
     flex-basis: 49%;
-    font-size: 1.3rem; }
+    font-size: 1.5rem; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -274,8 +274,8 @@ body {
       .story-1__content-1 {
         padding: 2rem 2rem 0 2rem; } }
   .story-1__text-1 {
-    font-size: 1.5rem;
-    color: #000;
+    font-size: 2rem;
+    color: #555558;
     margin-bottom: 4rem;
     margin-right: 2rem; }
 
@@ -320,8 +320,8 @@ body {
         margin: 0 2.2rem;
         padding-bottom: 2rem; } }
   .story-2__text-2 {
-    font-size: 1.5rem;
-    color: #000;
+    font-size: 2rem;
+    color: #555558;
     margin-bottom: 4rem; }
 
 .featured-works {
@@ -488,7 +488,7 @@ body {
   .blog__text {
     font-size: 1.3rem;
     padding-bottom: 1rem;
-    color: black; }
+    color: #555558; }
   .blog__arrow {
     display: inline-block;
     width: 1.5rem;
