@@ -473,9 +473,6 @@ body {
     @media only screen and (max-width: 37.5em) {
       .blog__image img {
         margin-left: 0; } }
-    @media only screen and (max-width: 56.25em) {
-      .blog__image img {
-        margin-left: 5rem; } }
   .blog__content {
     width: 100%;
     color: #fff;
