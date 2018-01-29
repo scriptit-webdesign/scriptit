@@ -5,6 +5,7 @@ Vi delade in arbetet i olika delar och har jobbat mest på varsitt håll men har
 
 Webbsidan är en singelpage där vi valde att ha en hamburgermeny i alla lägen. 
 Färgvalen tonade vi ner eftersom loggan har sin starka apelsinfärg och det är den vi vill lyfta fram.
+Apelsinfärgen återkommer i våra knappar och när man är inne i menyläge. Vi har jobbat med flexbox två och två eller tre på rad då vi vill ha en symmetriskt struktur genom hela webbsidan. Vi har använt oss av JavaScript i menyn för att navigera till vald rubrik.
 
 Vi har under dessa veckor som vi arbetar tillsammans med webbsidan lärt oss en hel del både om att arbeta i grupp och om varandra. Vi jobbar alla på olika sätt och i olika takt och tider så det är viktigt att lyssna på varandra och ge varandra positiv feedback. 
 
@@ -19,29 +20,6 @@ Rooheed, Jonas, Julia
 
 
 #Markdown
-
-Your website is a virtual representation of your company and your team members, so it should be as cool as you are! Our responsive design services will ensure online users are greeted with the same friendly, yet professional attitude your clients have grown to love. We’re pretty good at making websites...
-Descover more
-
-We do
-Digital marketing
-
-Digital marketing isn’t a popularity contest; it’s more like a test of knowledge. We can get your site up-to-date with Google’s standards through our eﬀective online marketing practices, which include SEO, PPC, display advertising and much more! Your custumers are online and they’re....Digital marketing...
-
-Descover more
-
-Our featured works
-     
-food.com
-clothes.com
-cars.com
-
-View all of our works 
-      
-Why choose us
-We could give you the typical spiel of how we’re the best at what we do, but while it would be true, it’s not all we have to oﬀer. The real reason you should choose us is because we’re like the life partner you’ve always wanted, but couldn’t quite ﬁnd. We know this is a bold statement, but just hear us out. We’ll listen to
-what you want and help you when you’re down. We’ll help you ﬁnd success, in more ways than one! We’ll support your businesses growth, and will be there when your boss breathes down your neck. But, most importantly, we’ll be the business you need, as well as 
-
 
 01 Design
 
@@ -82,7 +60,7 @@ Web design
 
 Your website is a virtual representation of your company and your team members, so it should be as cool as you are! Our responsive design services will ensure online users are greeted with the same friendly, yet professional attitude your clients have grown to love. We’re pretty good at making websites…
 
-Descover more
+Discover more
 
 We do
 
@@ -90,7 +68,7 @@ Digital marketing
 
 Digital marketing isn’t a popularity contest; it’s more like a test of knowledge. We can get your site up-to-date with Google’s standards through our eﬀective online marketing practices, which include SEO, PPC, display advertising and much more! Your custumers are online and they’re….Digital marketing…
 
-Descover more
+Discover more
 
 
 Amazing web marketing
@@ -108,7 +86,6 @@ cars.com
 
 View all of our works →
 
-Why choose us
 Why choose us
 
 
