@@ -5,9 +5,6 @@ Vi delade in arbetet i olika delar och har jobbat mest på varsitt håll men har
 
 Webbsidan är en singelpage där vi valde att ha en hamburgermeny i alla lägen. 
 Färgvalen tonade vi ner eftersom loggan har sin starka apelsinfärg och det är den vi vill lyfta fram.
-(NI FÅR GÄRNA LÄGGA IN MER TEXT OM DE OLIKA SEKTIONERNA PÅ WEBBSIDAN HÄR!)
-
-KANSKE KAN LÄGGA TILL ETT PAR RADER HÄR OM HUR VI KODAT (sass, javascript)!
 
 Vi har under dessa veckor som vi arbetar tillsammans med webbsidan lärt oss en hel del både om att arbeta i grupp och om varandra. Vi jobbar alla på olika sätt och i olika takt och tider så det är viktigt att lyssna på varandra och ge varandra positiv feedback. 
 
