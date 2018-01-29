@@ -1,70 +1,94 @@
-
-
+//////////////////////////////////
+// BLOG SECTION
 .blog { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex; 
-    flex-direction: row;
-    justify-content: flex-start;
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     margin-top: 4rem;  
-    margin-left: 15rem;
+    padding: 3rem;
     
-&__image {
-    height: 24vw;
-}
+    @include respond(phone) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        
+      }
+    
 &__image img {
-    width: 20vw; 
+    width: 100%; 
+    margin-left: 10rem;
+    @include respond(phone) {
+        margin-left: 0;
     
+      }
 }
+
 &__content {
     width: 100%; 
     color: #fff; 
-    padding:4vw 18vw 3vw 9vw;
+    padding: 5rem 25rem 4rem 8rem;
+    margin-left: 8rem;
+    @include respond(phone) {
+        text-align: center;
+        margin-left: 0;
+        padding: 0 2rem;
+    
+      }
 }
 &__date {
     color: $color-primary;
-    font-size: 1.1vw; 
+    font-size: 1.5rem; 
     font-weight: 400; 
-    letter-spacing: 0.1vw;
-    padding-bottom: 1.4vw;
+    letter-spacing: .3rem;
+    padding-bottom: 2rem;
     }
 &__title {
     font-size: 2rem; 
     font-weight: 400; 
-    letter-spacing: 0.1vw; 
-    line-height: 1.55vw; 
-    padding-bottom: 1.8vw; 
-    color: black;
+    letter-spacing: .3rem; 
+    line-height: 2rem; 
+    padding-bottom: 1rem; 
+    color: $color-black;
 }
 &__text {
-    font-size: 1.2rem; 
-    padding-bottom: 4vw; 
+    font-size: 1.3rem; 
+    padding-bottom: 1rem; 
     color: black;
 }
-}
 
-.arrows{
-    width: 3.5vw; 
-    margin-top: -5.8vw; 
-    margin-left: 72vw; 
-    
-}
-.arrow {
-     display: inline-block; 
-     width: 1.2vw; 
-     height: 1.2vw; 
-     border-top: 0.15vw solid rgb(0, 0, 0); border-left: 0.15vw solid rgb(0, 0, 0); transition: all .1s ease-in-out; 
+// ARROWS
+    &__arrow {
+        display: inline-block; 
+        width: 1.5rem; 
+        height: 1.5rem; 
+        border-top: 2px solid rgb(0, 0, 0); border-left: 2px solid rgb(0, 0, 0); -webkit-transition: all .1s ease-in-out; transition: all .1s ease-in-out; 
+      
+   }
+   &__arrow:hover {
+       border-color: $color-primary; 
+       border-width: 0.25vw;
+   }
    
-}
-.arrow:hover {
-    border-color: $color-primary; 
-    border-width: 0.25vw;
+   &__arrow.prev {
+       -webkit-transform: rotate(-45deg);
+               transform: rotate(-45deg); left: 0;
+   }
+   &__arrow.next {
+       -webkit-transform: rotate(135deg);
+               transform: rotate(135deg); 
+       right: 0;
+   }
+      
 }
 
-.arrow.prev {
-    transform: rotate(-45deg); left: 0;
-}
-.arrow.next {
-    transform: rotate(135deg); 
-    right: 0;
-}
-            
+
 			

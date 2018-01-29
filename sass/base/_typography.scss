@@ -1,10 +1,10 @@
-
+//////////////////////////////////
+// TYPOGRAPHY
 body {
 	font-family: "lato", sans-serif;
 	font-weight: 400;
 	line-height: 1.7;
 	color: $color-grey-dark;
-	
 }
 
 .heading-primary {
@@ -13,11 +13,6 @@ body {
 	backface-visibility: hidden;
 	margin-bottom: 6rem;
 
-	/* @include respond(phone) {
-		
-	} */
-
-	
 	&--main {
 		display: block;
 		font-size: 6rem;
@@ -27,13 +22,7 @@ body {
 		animation-name: moveInLeft; 
 		animation-duration: 1s;
 		animation-timing-function: ease-out;
-		/*animation-delay: 3s;*/
-		
-	/* 	@include respond(phone) {
-			letter-spacing: 1rem;
-			font-size: 5rem;
-			margin-top: 6rem;
-		} */
+	
 	}
 
 	&--sub {
@@ -42,22 +31,13 @@ body {
 		font-weight: 700;
 		letter-spacing: .5rem;
 		animation: moveInRight 1s ease-out; 
-
-		/* @include respond(phone) {
-			letter-spacing: .5rem;
-		} */
 	}
 }
 
 .heading-2 {
 	font-size: 5rem;
-	// margin-top: -2rem;
 	color: $color-black;
 	line-height: 1;
-	/* @include respond(phone) {
-		font-size: 3rem;
-	 } */
-	 
 }
 
 .heading-3 {

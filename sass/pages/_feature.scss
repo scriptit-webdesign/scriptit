@@ -1,27 +1,42 @@
+//////////////////////////////////
+// FEATURED WORKS SECTION
 .featured-works {
     max-width: 140rem;
     margin: 4rem auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     @include respond(phone) {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
       }
     
     &__customer {
-        box-sizing: border-box;
-        flex-basis: 30%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
         padding: 15rem 0;
         margin-bottom: 3rem;
+        -webkit-transition: all .2s;
         transition: all .2s;
        
         &:hover {
-            transform: scale(1.05);
-            box-shadow: 0 2rem 5rem rgba($color-black, .2);
+            -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
+            -webkit-box-shadow: 0 2rem 5rem rgba($color-black, .2);
+                    box-shadow: 0 2rem 5rem rgba($color-black, .2);
             z-index: 20;
     }
     }
 
     &__customer:nth-child(1) {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color-primary, .5)), to(rgba($color-primary, .5))), url(../img/home.jpg);
         background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/home.jpg);
         
         text-align: center;
@@ -29,11 +44,13 @@
     }
 
     &__customer:nth-child(2) {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color-primary, .5)), to(rgba($color-primary, .5))), url(../img/clothes.jpg);
         background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/clothes.jpg);
         text-align: center;
     }
 
     &__customer:nth-child(3) {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color-primary, .5)), to(rgba($color-primary, .5))), url(../img/cars.png);
         background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/cars.png);
         text-align: center;
     }

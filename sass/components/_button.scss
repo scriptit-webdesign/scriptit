@@ -1,4 +1,5 @@
-
+//////////////////////////////////
+// BUTTONS
 .btn {
 	&:link,
 	&:visited {
@@ -15,13 +16,13 @@
 
 	&:hover {
 		-webkit-transform: translateY(-.3rem);
-		        transform: translateY(-.3rem);
+		transform: translateY(-.3rem);
 		-webkit-box-shadow: 0 1rem 2rem rgba($color-black,.2);
-		        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+		box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
 		&::after {
 			-webkit-transform: scaleX(1.4) scaleY(1.6);
-			        transform: scaleX(1.4) scaleY(1.6);
+			transform: scaleX(1.4) scaleY(1.6);
 			opacity: 0;
 		}
 	}
