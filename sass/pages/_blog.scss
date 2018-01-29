@@ -30,6 +30,11 @@
         margin-left: 0;
     
       }
+
+      @include respond(tab-port) {
+        margin-left: 5rem;
+        
+      }
 }
 
 &__content {
@@ -43,6 +48,11 @@
         padding: 0 2rem;
     
       }
+
+      @include respond(tab-port) {
+        padding: 5rem 0 4rem 4rem;
+    
+}
 }
 &__date {
     color: $color-primary;
