@@ -1,22 +1,22 @@
 # Scriptit 
-Vi började vårt grupparbete med att tillsammans bestämma att företagets inriktning är att sälja tjänster åt mindre aktörer. Vi gjorde sedan en varsin mockup och varsin logga efter att vi valt Jonas förslag att döpa arbetet till scriptit. Vi kom fram till att Jonas logga och Rooheeds färgval skulle vara en bra kombo och vi tog de bästa delarna av allas mockup när vi slutligen kom fram till en slutgiltig produkt som vi var nöjda med. 
+
+Vi började vårt grupparbete med att tillsammans bestämma att företagets inriktning är att sälja tjänster åt mindre aktörer. Vi gjorde sedan en varsin mockup och varsin logga efter att vi valt Jonas förslag att döpa arbetet till Scriptit. Vi kom fram till att Jonas logga och Rooheeds färgval skulle vara en bra kombo och vi tog de bästa delarna av allas mockup när vi slutligen kom fram till en slutgiltig produkt som vi var nöjda med. 
 När vi skissade på varsin mockup så blev designen och strukturen vilka varandra vilket underlättade starten på projektet.
-Vi delade in arbetet i olika delar och har jobbat mest på varsitt håll men har hela tiden haft kontakt via slack. Vi gjorde ett tidsschema i Trello där vi kunde följa varandra och lägga till delar vi behövde under arbetets gång. 
+Vi delade in arbetet i olika delar och har jobbat mest på varsitt håll men har hela tiden haft kontakt via Slack. Vi gjorde ett tidsschema i Trello där vi kunde följa varandra och lägga till delar vi behövde under arbetets gång. 
 
 Webbsidan är en singelpage där vi valde att ha en hamburgermeny i alla lägen. 
-Färgvalen tonade vi ner eftersom loggan har sin starka apelsinfärg och det är den vi vill lyfta fram.
-Apelsinfärgen återkommer i våra knappar och när man är inne i menyläge. Vi har jobbat med flexbox två och två eller tre på rad då vi vill ha en symmetriskt struktur genom hela webbsidan. Vi har använt oss av JavaScript i menyn för att navigera till vald rubrik.
+Färgvalen tonade vi ner eftersom loggan har sin starka apelsinfärg och det är den vi vill lyfta fram. Apelsinfärgen återkommer i våra knappar och när man är inne i menyläge. Vi har jobbat med flexbox två och två eller tre på rad då vi vill ha en symmetriskt struktur genom hela webbsidan. Vi har använt oss av JavaScript i menyn för att navigera till vald rubrik. 
+
+Vi tyckte det var lite problematiskt med github så för att underlätta arbetet under denna tidsschema valde vi att skicka kod mellan varandra i Slack och sen commitade och pushade Rooheed upp det mesta för att slippa en massa merge konflikter. Vi tog där beslutet att lägga ner mer tid på vår design och på stylingen.  
 
 Vi har under dessa veckor som vi arbetar tillsammans med webbsidan lärt oss en hel del både om att arbeta i grupp och om varandra. Vi jobbar alla på olika sätt och i olika takt och tider så det är viktigt att lyssna på varandra och ge varandra positiv feedback. 
 
 Vi är nöjda och tycker vi uppnått det mål vi hade med vår slutprodukt. Till kommande grupparbeten tycker vi kommunikation och tidsplanen är några av huvudnycklarna för ett lyckat samarbete. 
 
-Julia fick under projektets gång mindre uppgifter och det var vi alla överens om. 
-Vi behövde göra en ändring för att bli klara i tid. 
-
 
 2018-01-28
 Rooheed, Jonas, Julia
+
 
 
 #Markdown
