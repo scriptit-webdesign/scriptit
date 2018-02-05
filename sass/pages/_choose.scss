@@ -30,9 +30,9 @@
 }
 
 .partiners {
-    -webkit-box-flex: 1;
+   /*   -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1;
+            flex: 1; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -42,41 +42,34 @@
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+            align-items: center;  
     background-color: $color-grey;
     padding-bottom: 2rem;
-    
+
 }
 .company-partner {
     padding: 0 2rem;
     margin-bottom: 3.5rem;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
     @include respond(phone) {
         padding: 2rem;
         margin-bottom: 1rem;
       }
-    
-    &__part {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-   
-  
+     
     &__co-logo {
-        height: auto;
         width: 50%;
+        height: auto;
         margin-right: 1.5rem;
         -webkit-transition: all .2s;
         transition: all .2s;
-
+    
         @include respond(phone) {
-            width: 50%;
-            height: auto;
             margin-left: -0.5rem;
           }
         &:hover {
@@ -91,4 +84,5 @@
     }
 
 }
+
 
